@@ -1,0 +1,25 @@
+
+$mainColor:#15023a;
+
+$width:768px;
+
+@mixin mobile{
+    @media(max-width:#{$width}){
+      @content
+    }
+}
+$mWidth:490px;
+
+@mixin littleMobile{
+    @media(max-width:#{$mWidth}){
+        @content
+    }
+}
+
+$smWidth:400px;
+
+@mixin smMobile{
+    @media(max-width:#{$smWidth}){
+        @content
+    }
+}

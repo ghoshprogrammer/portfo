@@ -1,0 +1,21 @@
+
+
+.portfolioList{
+    font-size: 16px;
+    margin-right:50px;
+    padding:5px;
+    // overflow: hidden;
+    
+    
+    &.active{
+        background-color: #15023a;
+        color:white;
+        padding: 12px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor:pointer;
+
+    }
+}

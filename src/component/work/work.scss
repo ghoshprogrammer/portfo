@@ -1,0 +1,115 @@
+@import "../../global.scss";
+.work{
+    background-color: crimson;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position: relative;
+
+    .arrow{
+        position: absolute;
+        height:50px;
+        cursor: pointer;
+        &.arrowleft{
+            left:100px;
+            transform:rotate(180deg);
+        }
+        &.arrowright{
+           
+            right:100px;
+        }
+    }
+    .slider{
+        height:350px;
+        display:flex;
+        position:absolute;
+        left:0;
+        transition:all 1s linear ;
+        @include littleMobile{
+            height:280px;
+        }
+        
+        .container{
+            width:100vw;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            .item{
+                width:700px;
+                height:100%;
+                background-color: white;
+                border-radius: 20px;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                @include littleMobile{
+                    width:600px;
+                }
+                
+                .left{
+                    flex:4;
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                    height: 80%;
+                    .leftContainer{
+                        width:90%;
+                        height:70%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        .imgContainer{
+                            width:40px;
+                            height:40px;
+                            border-radius: 100%;
+                            background-color: rgb(245,179,155);
+                            display:flex;
+                            align-items:center;
+                            justify-content:center;
+                            
+                            img{
+                                width:25px;
+                                @include littleMobile{
+                                width:90%;
+                                }
+                            }
+                           }
+                            h2{
+                                font-size:20px;
+                                @include littleMobile{
+                                    font-size:18px;
+                                    }
+                            }
+                            p{
+                                font-size:13px;
+                            }
+                            span{
+                                font-weight: 600;
+                                font-size:12px;
+                                text-decoration: underline;
+                            }
+                     
+
+                        }
+                }
+                .right{
+                    flex:8;
+                    height:100%;
+                    align-items: center;
+                    display:flex;
+                    justify-content: center;
+                    overflow:hidden;
+                    @include littleMobile{
+                        flex:6;
+                        }  
+                    img{
+                        width:400px;
+                        transform:rotate(-10deg)
+                    }
+                    
+                }
+
+            }
+        }
+    }
+}
